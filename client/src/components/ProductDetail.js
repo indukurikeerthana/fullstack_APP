@@ -24,12 +24,7 @@ function ProductDetail() {
 
       <h2 style={{ marginTop: "1rem" }}>{product.name}</h2>
 
-      <p><strong>Price:</strong> ₹{Number(product.retail_price).toFixed(2)}</p>
-
-      <p>
-        <strong>Description:</strong>{" "}
-        {product.description ? product.description : "No content"}
-      </p>
+      <p><strong>Price:</strong> ₹{Number(product.price).toFixed(2)}</p>
     </div>
   );
 }

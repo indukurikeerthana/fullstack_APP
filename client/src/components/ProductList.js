@@ -31,7 +31,8 @@ function ProductList() {
               padding: "1rem"
             }}>
               <h3>{product.name}</h3>
-              <p>₹{Number(product.retail_price).toFixed(2)}</p>
+              <p><strong>Price:</strong> ₹{Number(product.price).toFixed(2)}</p>
+              <p><strong>Department:</strong> {product.department}</p>
             </div>
           </Link>
         ))}
